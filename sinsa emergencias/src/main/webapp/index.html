@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Iniciar seccion</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                text-align: center;
+                background-color: cornflowerblue;
+            }
+            h1{
+                text-align: center;
+                text-transform: uppercase;
+            }
+            form{
+                text-align: center;
+            }
+            .boton{
+             background-color: blue;   
+             color: white;
+             text-transform: uppercase;
+             padding: 10px;
+             margin: 10px;
+            }
+            input{
+                display: flex;
+            }
+            .usuario{
+                padding: 7px;
+                margin: 5px;
+                background-color: aquamarine;
+            }
+            .clave{
+                padding: 7px;
+                margin: 5px;
+                background-color: aquamarine;
+            }
+        </style>
+   </head>
+    <body>
+
+        <h1>inicio de sesion</h1>
+        <form action="procesarFormulario" method="post"> <!-- metodo post -->
+            <label for="usuario">Usuario:</label>
+            <center>
+                <input class="usuario" type="text" id="usuario" name="usuario" placeholder="usuario" >
+            </center>
+            <label for="clave">Clave:</label>
+            <center>
+                <input class="clave" type="password" id="clave" name="clave" placeholder="Clave">
+            </center>
+            <center>
+                <input class="boton" type="submit" value="ingresar " />
+            </center>
+            
+
+        </form>
+        <//%@page contentType="text/html" pageEncoding="UTF-8"%>
+        
+    </body>
+</html>
